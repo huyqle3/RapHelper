@@ -14,6 +14,7 @@
     - !<own> e5a96c69-9a56-417f-b3df-ba79b6c3be07
     - !<own> 5b34f873-9754-4eed-8090-694e399aeafa
     - !<own> 65066b4b-8865-4016-af2a-8a34bfcfe245
+    - !<own> e9ae9374-39b4-4ea2-ba9d-b1a3a4ca17d7
     - !<own> 72ae6b54-a21e-4109-becc-0b1348b6111f
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
@@ -218,7 +219,7 @@
   PrefabRemaps:
     []
   Name: AI-Caption
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform: !<TransformEntity>
     Position: {x: -3.000000, y: 5.000000, z: 0.000000}
@@ -561,6 +562,22 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/236bee0e-8242-49c3-9a1e-847f0ed1d4d2>
+  PrefabRemaps:
+    []
+  Name: RapFrame
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: -55.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> de6712ed-b9bc-4b17-9d38-596a42de48c3
+  Components:
+    - !<own> d8341ef1-7dca-4f4f-999c-bca90b3f4371
+    - !<own> 972865f6-97fb-4c1a-920a-1bd42be8b18a
 - !<SceneObject/237d0889-32db-4439-825f-f493063ac066>
   PrefabRemaps:
     []
@@ -1111,6 +1128,7 @@
     - 033e88f8-a8d6-4a30-a8fe-4f870e82cffb: 3aa32d84-9048-4f38-7e7e-478ce8b76f0b
     - 11e052a9-d484-46ea-9fb3-ffd214c9aaa3: 890de5e6-20c2-43e6-78cd-f460a388aa7b
     - 1fb59c3f-968d-4256-ba74-d5aa13ac3dae: fa156da8-f8ce-4b91-7e45-08f47f944d59
+    - 236bee0e-8242-49c3-9a1e-847f0ed1d4d2: 573eb24d-662c-46af-bd3e-b0bf40a02068
     - 237d0889-32db-4439-825f-f493063ac066: b0d8d218-1b19-4ffe-7cbb-cb10d75e0f0e
     - 3a0e827b-02c3-411d-98f8-6c4ed3d1f3cb: a922954f-b0d2-4ba4-6b50-a4b21d7732ac
     - 3b09e043-9303-49dd-96f2-96e116f00ada: 5154793e-7c68-420c-53ce-d64ae360ffba
@@ -1123,9 +1141,14 @@
     - 7b8545cc-2a3a-481f-bd03-8c4642fe9b80: 4e8ee53a-09f2-488d-6467-44cb9678103b
     - 8e36c500-e8f3-4136-acaf-4ab942a9df87: 2b373b57-d9b4-4aa2-5e69-3ea7c65c0192
     - 92839489-d980-4289-916d-e3c9577fc1f5: 3a22dc3e-a255-4660-611b-53a774987eb3
+    - 972865f6-97fb-4c1a-920a-1bd42be8b18a: 6a095c94-f0fd-4bb6-878a-b69027e59339
     - bc9ab64d-6087-4f66-b3e6-9c365d5f8827: 6b19d9dd-ebde-482a-462a-1bce50c898bc
+    - bf7f9c77-e6aa-49df-af94-4f59e3f0d26c: d3e67b0e-fa0d-4b15-b986-ff3e8668a6b6
     - cb04f1c8-a563-49c4-bd2d-06d9a6349a85: 45b91d7c-ceb0-439a-5713-b166de220490
+    - d0064468-4c1b-483e-92fa-bb14567025bb: 42338064-01fd-403d-b79e-c6343ecb75ba
+    - d8341ef1-7dca-4f4f-999c-bca90b3f4371: 6564476d-0903-4a31-bfc9-d03664237141
     - da97ac6a-c2f0-426b-ae32-8843e913622a: 3421453f-ec56-434f-6418-a08790894c62
+    - de6712ed-b9bc-4b17-9d38-596a42de48c3: 8900fbf9-b118-445a-bfc9-b875483b3b3a
     - e143b6ca-9ef0-43cf-92e6-9f399c7ec09d: 81fb9dc2-73fc-46d4-4311-68d3142d9fc9
     - ededc3c7-8de8-49b8-9fb1-cc684ee2293a: 565a8d68-ef62-423f-6d32-0d477b710554
   Name: Scanner
@@ -1138,6 +1161,7 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 237d0889-32db-4439-825f-f493063ac066
+    - !<own> 236bee0e-8242-49c3-9a1e-847f0ed1d4d2
     - !<own> 033e88f8-a8d6-4a30-a8fe-4f870e82cffb
     - !<own> 4567688d-a020-4662-9ca6-c3ab49adcef1
     - !<own> 1fb59c3f-968d-4256-ba74-d5aa13ac3dae
@@ -1594,7 +1618,7 @@
       screenCropTexture: !<reference.Texture> cd12b01a-61d6-4671-bba2-6c3bde1a9812
       cropRegion: !<MappingBased.AssignableType> bc9ab64d-6087-4f66-b3e6-9c365d5f8827
       chatGPT: !<MappingBased.AssignableType_1> c79b587a-38b7-4ef7-a100-71f7f017d623
-      caption: !<MappingBased.AssignableType_2> ededc3c7-8de8-49b8-9fb1-cc684ee2293a
+      caption: !<MappingBased.AssignableType_2> 972865f6-97fb-4c1a-920a-1bd42be8b18a
   ScriptTypes:
     "":
       {}
@@ -2688,6 +2712,7 @@
     - 033e88f8-a8d6-4a30-a8fe-4f870e82cffb: 918813e6-4e50-45cd-7f13-1c90197a790f
     - 11e052a9-d484-46ea-9fb3-ffd214c9aaa3: c7ab0871-d73e-45c1-52b5-34ad443af793
     - 1fb59c3f-968d-4256-ba74-d5aa13ac3dae: e55c2c04-cb43-49ca-6de0-9ed5fa299ab8
+    - 236bee0e-8242-49c3-9a1e-847f0ed1d4d2: 510acb92-f498-4513-839a-3ef9596ba8cf
     - 237d0889-32db-4439-825f-f493063ac066: 99d9fa04-5340-4c05-461a-d9ad4053b8cb
     - 3a0e827b-02c3-411d-98f8-6c4ed3d1f3cb: beb3cc86-df2f-4e7a-6a08-3bfca6d651b6
     - 3b09e043-9303-49dd-96f2-96e116f00ada: 9c8ff5da-cab8-4667-4dec-5e4386d3c025
@@ -2702,9 +2727,14 @@
     - 7b8545cc-2a3a-481f-bd03-8c4642fe9b80: 735f8645-16c5-4208-4ee3-87ade5439408
     - 8e36c500-e8f3-4136-acaf-4ab942a9df87: 31440362-edbf-43e0-7aab-82e751ea8739
     - 92839489-d980-4289-916d-e3c9577fc1f5: f2b257ed-a9d5-48ee-5963-4ec170e8df9f
+    - 972865f6-97fb-4c1a-920a-1bd42be8b18a: d06bf90f-71b9-43e3-8863-8813f7909ad7
     - bc9ab64d-6087-4f66-b3e6-9c365d5f8827: f129645a-d5fd-4896-572d-774b36cedb66
+    - bf7f9c77-e6aa-49df-af94-4f59e3f0d26c: 8bf05a5b-e553-4b72-a19f-5d1bf07c854f
     - cb04f1c8-a563-49c4-bd2d-06d9a6349a85: 117d68f9-d2ae-4654-5a2f-d1981e7de83c
+    - d0064468-4c1b-483e-92fa-bb14567025bb: 0a6998a9-4f1f-4ed5-9993-31992c84719c
+    - d8341ef1-7dca-4f4f-999c-bca90b3f4371: ebcd8524-6240-4f94-bfa1-f4e59e57be6c
     - da97ac6a-c2f0-426b-ae32-8843e913622a: 9ee7322f-8d9c-4d30-5a4c-0ade48907706
+    - de6712ed-b9bc-4b17-9d38-596a42de48c3: b8635cc9-eb8f-40f0-b2c2-a0dd8935bb79
     - e143b6ca-9ef0-43cf-92e6-9f399c7ec09d: f2a4572f-d319-41ca-4349-0640d9597bd0
     - ededc3c7-8de8-49b8-9fb1-cc684ee2293a: 0b7a4527-ede1-4d0c-6c3b-d84d2182aaf9
   Name: PictureController
@@ -3365,6 +3395,23 @@
     - !<own> a4be667c-356e-4cf4-81ef-21e3e55cb1c2
   Components:
     []
+- !<ScriptComponent/972865f6-97fb-4c1a-920a-1bd42be8b18a>
+  PrefabRemaps:
+    []
+  Name: CaptionBehavior
+  Enabled: true
+  ScriptAsset: !<reference> 682bae4b-823b-46ea-8938-4645322c33af
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      captionText: !<reference.Text> d0064468-4c1b-483e-92fa-bb14567025bb
+      scaleObj: !<reference.SceneObject> 236bee0e-8242-49c3-9a1e-847f0ed1d4d2
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/974e2072-cd2a-4664-8d91-d71bbcd60d54>
   PrefabRemaps:
     []
@@ -4218,6 +4265,21 @@
     []
   Components:
     - !<own> 4f0918a0-47ee-4f22-8ff5-e7444593f7c6
+- !<SceneObject/bf7f9c77-e6aa-49df-af94-4f59e3f0d26c>
+  PrefabRemaps:
+    []
+  Name: Rap
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 2.000004}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d0064468-4c1b-483e-92fa-bb14567025bb
 - !<Text/c11101e2-7c34-4d00-99be-40e79fd24f76>
   PrefabRemaps:
     []
@@ -4495,7 +4557,7 @@
     {}
   ScriptInputs:
     "":
-      {}
+      audioLooper: !<MappingBased.AssignableType> ce6415e0-defa-4773-b562-0910846cc56b
   ScriptTypes:
     "":
       {}
@@ -4633,6 +4695,113 @@
     - !<own> b40de955-ab8c-49c9-b820-131bce9b1f0e
   Components:
     - !<own> 704f8a3b-ed7c-4e7e-8013-0d8eb62ff8b8
+- !<ScriptComponent/ce6415e0-defa-4773-b562-0910846cc56b>
+  PrefabRemaps:
+    []
+  Name: AudioLooper
+  Enabled: true
+  ScriptAsset: !<reference> 088c00da-ef5a-46bf-b7d3-7a90ea04b6e6
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      audioComp: !<reference.AudioComponent> fc745b86-dd2b-41ab-9a53-6bf911e422a4
+      audioTracks: !<reference.AudioTrackAsset[]>
+        - !<reference> feed6cce-1aeb-493c-95aa-96ed62498941
+        - !<reference> 8dd6a8c7-e9ed-4a99-8c93-07217af9fc9e
+        - !<reference> b11d3073-67e4-4f06-9d2d-02d42b8eedaf
+        - !<reference> 46914ae9-3b0b-4596-bc41-d57f2b7548cf
+        - !<reference> c5ba1bb3-d808-4664-be78-18a7345b9587
+  ScriptTypes:
+    "":
+      {}
+- !<Text/d0064468-4c1b-483e-92fa-bb14567025bb>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 10
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: |-
+    Mirror game strong but the glass look tired,
+    Tryna look deep, but the vibe expired.
+    Hair two-tone like a Wi-Fi zone,
+    Signal weak, better head back home.
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 52
+  Font: !<reference> 709203b6-8b83-40d7-8dda-e5adc4fd2875
+  LayoutRect:
+    left: -12.000000
+    bottom: -4.000000
+    right: 12.000000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 0.657115}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  BlendMode: PremultipliedAlpha
+  Outline: !<OutlineSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<SceneObject/d068eba3-1e0b-4b40-aa4c-7096a22b2748>
   PrefabRemaps:
     []
@@ -4790,6 +4959,76 @@
     - !<own> 6bf04e34-6299-4f27-8f48-259345a32666
   Components:
     []
+- !<ScriptComponent/d8341ef1-7dca-4f4f-999c-bca90b3f4371>
+  PrefabRemaps:
+    []
+  Name: Frame
+  Enabled: true
+  ScriptAsset: !<reference> 3b46d829-f6db-432a-914c-3551904d3994
+  ScriptInputsDefault:
+    _appearance: true
+    _padding: true
+    allowScaling: true
+    autoScaleContent: true
+    relativeZ: true
+    _onlyInteractOnBorder: true
+    allowTranslation: true
+    _cutOutCenter: true
+    minimumSize: true
+    maximumSize: true
+    useBillboarding: true
+    xOnTranslate: true
+    xAlways: true
+    xBufferDegrees: true
+    yOnTranslate: true
+    yAlways: true
+    yBufferDegrees: true
+    useSnapping: true
+    itemSnapping: true
+    worldSnapping: true
+    _following: true
+    _showCloseButton: true
+    _enableInteractionPlane: true
+    _interactionPlaneOffset: true
+    _interactionPlanePadding: true
+    _targetingVisual: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      autoShowHide: false
+      _appearance: Large
+      _innerSize: !<Vec2> {x: 20.000000, y: 10.000000}
+      _padding: !<Vec2> {x: 0.000000, y: 0.000000}
+      allowScaling: true
+      autoScaleContent: true
+      relativeZ: true
+      _onlyInteractOnBorder: false
+      allowTranslation: true
+      _cutOutCenter: false
+      minimumSize: !<Vec2> {x: 10.000000, y: 10.000000}
+      maximumSize: !<Vec2> {x: 150.000000, y: 150.000000}
+      useBillboarding: true
+      xOnTranslate: true
+      xAlways: false
+      xBufferDegrees: !<float> 0.000000
+      yOnTranslate: true
+      yAlways: false
+      yBufferDegrees: !<float> 0.000000
+      useSnapping: false
+      itemSnapping: false
+      worldSnapping: false
+      _showFollowButton: true
+      useFollowBehavior: true
+      _following: false
+      _showCloseButton: false
+      _enableInteractionPlane: true
+      _interactionPlaneOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      _interactionPlanePadding: !<Vec2> {x: 0.000000, y: 0.000000}
+      _targetingVisual: !<float> 1.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/d8ce2d41-6bdf-4d37-beb2-a693b7e1d24c>
   PrefabRemaps:
     []
@@ -5038,6 +5277,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/de6712ed-b9bc-4b17-9d38-596a42de48c3>
+  PrefabRemaps:
+    []
+  Name: Info
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> bf7f9c77-e6aa-49df-af94-4f59e3f0d26c
+  Components:
+    []
 - !<SceneObject/e0b103d0-c0f0-4704-a927-287d342f0319>
   PrefabRemaps:
     []
@@ -5154,6 +5408,22 @@
     []
   Components:
     []
+- !<SceneObject/e9ae9374-39b4-4ea2-ba9d-b1a3a4ca17d7>
+  PrefabRemaps:
+    []
+  Name: AudioLooper
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: -65.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ce6415e0-defa-4773-b562-0910846cc56b
+    - !<own> fc745b86-dd2b-41ab-9a53-6bf911e422a4
 - !<Text/ebd0d532-64f3-41cd-89e1-8749a83c2c54>
   PrefabRemaps:
     []
@@ -5653,6 +5923,23 @@
     - !<own> 85b990fe-4a77-4e85-b87e-28981b812dd8
   Components:
     []
+- !<AudioComponent/fc745b86-dd2b-41ab-9a53-6bf911e422a4>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableAutoplayLoop: true
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/fe66bb72-6c90-42c5-bc72-2915d91b4804>
   PrefabRemaps:
     []

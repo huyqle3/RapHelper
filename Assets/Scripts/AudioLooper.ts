@@ -9,7 +9,7 @@ export class AudioLooperTracks extends BaseScriptComponent {
 
   // Drop your AudioTrack assets here in the Inspector.
   // In Lens Studio/Spectacles, AudioTrack assets are typed as Asset.AudioTrack
-  @input audioTracks: Asset.AudioTrack[]
+  @input audioTracks: AudioTrackAsset[]
 
   onAwake() {
     if (!this.audioComp) {
@@ -68,5 +68,18 @@ export class AudioLooperTracks extends BaseScriptComponent {
     }
     ;(this.audioComp as any).loop = false
     this.audioComp.play(1.0)
+  }
+
+  public getTrackCount(): number {
+    return this.audioTracks ? this.audioTracks.length : 0
+  }
+  
+  public playRandomLoop(): void {
+    if (!this.audioComp || !this.audioTracks || this.audioTracks.length === 0) {
+      print("AudioLooperTracks: No tracks to play.")
+      return
+    }
+    const idx = Math.floor(Math.random() * this.audioTracks.length)
+    this.playLoop(idx)
   }
 }

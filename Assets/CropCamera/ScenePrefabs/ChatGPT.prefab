@@ -11,12 +11,12 @@
   Enabled: true
   ScriptAsset: !<reference> d5ef2a51-66a4-4fda-93c0-d094de949e4b
   ScriptInputsDefault:
-    {}
+    audioLooper: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      {}
+      audioLooper: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
