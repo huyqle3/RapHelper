@@ -1,5 +1,5 @@
 import { OpenAI } from "RemoteServiceGateway.lspkg/HostedExternal/OpenAI"
-import { AudioLooperTracks } from "./AudioLooper"
+import { AudioLooperTracks } from "./AudioLooperTracks"
 
 @component
 export class ChatGPT extends BaseScriptComponent {
