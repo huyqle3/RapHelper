@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/57902a32-b457-4c76-90f6-87318da9309f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 088c00da-ef5a-46bf-b7d3-7a90ea04b6e6
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 088c00da-ef5a-46bf-b7d3-7a90ea04b6e6
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4bdd2a56-64c5-4b76-bf3d-402d971710bf
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/4bdd2a56-64c5-4b76-bf3d-402d971710bf>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: b5ae3aea-4832-477e-b9c6-f0a287c84c98
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    audioList: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - audioList: !<reference.AudioComponent[]>
+        []
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @input Component.AudioComponent[] audioList"

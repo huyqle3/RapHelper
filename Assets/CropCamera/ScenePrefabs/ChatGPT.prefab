@@ -1,0 +1,38 @@
+- !<ObjectPrefab/1a9be596-8ed9-4bd6-bb21-3368ed6f49f8>
+  PackagePath: ""
+  objects:
+    - !<own> 51cd0956-4761-4089-b9fe-3bcc3b25114d
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/2b6c36c0-a761-4815-a838-63f151cca162>
+  PrefabRemaps:
+    []
+  Name: ChatGPT
+  Enabled: true
+  ScriptAsset: !<reference> d5ef2a51-66a4-4fda-93c0-d094de949e4b
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/51cd0956-4761-4089-b9fe-3bcc3b25114d>
+  PrefabRemaps:
+    - 2b6c36c0-a761-4815-a838-63f151cca162: 2b6c36c0-a761-4815-57c7-9c0eae335e9d
+    - 51cd0956-4761-4089-b9fe-3bcc3b25114d: 51cd0956-4761-4089-4601-c433c4daeeb2
+  Name: ChatGPT
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2b6c36c0-a761-4815-a838-63f151cca162

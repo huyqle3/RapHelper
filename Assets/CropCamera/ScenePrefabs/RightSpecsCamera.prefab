@@ -1,0 +1,53 @@
+- !<ObjectPrefab/a233f786-1560-4fa9-96e5-22c78a81ac3e>
+  PackagePath: ""
+  objects:
+    - !<own> dc6f179f-7529-49b7-a7b5-57993622e44a
+  LazyLoading: false
+  RetainAssets: true
+- !<Camera/3baeef40-bdbc-4248-a02a-8b9d9c5a0838>
+  PrefabRemaps:
+    []
+  Name: Camera
+  Enabled: true
+  renderLayer: 1048576
+  MipmapLevel: 0
+  RenderOrder: 0
+  Size: 20.000000
+  Near: 1.000000
+  Far: 1000.000000
+  Fov: 63.541019
+  ClearColor: !<CameraClearColor>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth>
+    Mode: Value
+    Value: 1.000000
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Aspect: 1.000000
+  CameraType: Perspective
+  DepthMode: Regular
+  DeviceProperty: None
+  AspectPreset: Custom
+  OitLayers: NoOit
+  RenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+  DevicePropertiesSource: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/dc6f179f-7529-49b7-a7b5-57993622e44a>
+  PrefabRemaps:
+    - 3baeef40-bdbc-4248-a02a-8b9d9c5a0838: 3baeef40-bdbc-4248-5fd5-746263a5f7c7
+    - dc6f179f-7529-49b7-a7b5-57993622e44a: dc6f179f-7529-49b7-584a-a866c9dd1bb5
+  Name: RightSpecsCamera
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3baeef40-bdbc-4248-a02a-8b9d9c5a0838

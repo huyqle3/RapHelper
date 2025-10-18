@@ -1,0 +1,16 @@
+- !<AssetImportMetadata/b36bbc63-f23b-4f36-868d-99a7da7038d1>
+  ImportedAssetIds:
+    SupabaseProject: !<reference> 399df338-53fd-4e75-858a-9f02040de024
+  ImporterName: SupabaseProjectImporter
+  PrimaryAsset: !<reference> 399df338-53fd-4e75-858a-9f02040de024
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

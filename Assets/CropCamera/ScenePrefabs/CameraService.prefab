@@ -1,0 +1,42 @@
+- !<ObjectPrefab/c4016e95-2c12-4c21-ac7d-029b4b23400b>
+  PackagePath: ""
+  objects:
+    - !<own> 6568c380-24cf-43a2-b10c-8887481350ae
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/6568c380-24cf-43a2-b10c-8887481350ae>
+  PrefabRemaps:
+    - 6568c380-24cf-43a2-b10c-8887481350ae: 6568c380-24cf-43a2-4ef3-7778b7ecaf51
+    - d804b5d7-3a54-43eb-b614-eebcc3a4ef90: d804b5d7-3a54-43eb-49eb-11433c5b106f
+  Name: CameraService
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d804b5d7-3a54-43eb-b614-eebcc3a4ef90
+- !<ScriptComponent/d804b5d7-3a54-43eb-b614-eebcc3a4ef90>
+  PrefabRemaps:
+    []
+  Name: CameraService
+  Enabled: true
+  ScriptAsset: !<reference> df1b646f-ce02-4d29-a685-6cda2365ad6b
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      editorCamera: !<reference.Camera> 00000000-0000-0065-0000-000000000065
+      specsLeftCamera: !<reference.Camera> 1d88044d-8781-4736-b2fd-4fba1a32457d
+      specsRightCamera: !<reference.Camera> f3280b3a-c7da-4d79-bd27-659dcd704ab1
+      screenCropTexture: !<reference.Texture> cd12b01a-61d6-4671-bba2-6c3bde1a9812
+      deviceCamTexture: !<reference.Texture> 996c6f4e-b2ad-4117-9e3e-3db82e6e97f5
+  ScriptTypes:
+    "":
+      {}
